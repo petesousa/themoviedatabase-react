@@ -1,0 +1,24 @@
+h3.introduction { 
+  text-align: center; 
+  padding: 0 16px 16px 16px;
+  background-color: #D9DCD6;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+.upcomingMoviesSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 16px;
+  padding: 48px;
+  padding-top: 0;
+  background-color: #D9DCD6;
+}
+
+
+@media(min-width: 891px) {
+  h3.introduction {
+    font-size: 1.1em;
+  }
+}
