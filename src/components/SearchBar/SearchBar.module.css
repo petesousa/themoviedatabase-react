@@ -1,0 +1,48 @@
+.navBar { 
+  width: 100vw; 
+  height: 80px; 
+  
+  padding: 20px 0 10px 0;
+  display: grid;
+  grid-template-columns: minmax(24px, 1fr) minmax(240px, 560px) minmax(24px, 1fr);
+  grid-template-rows: 30px auto; 
+  background-color: #D9DCD6;
+}
+
+.navBar input {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.suggestionContainer {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: white;
+  z-index: 10;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 16px;
+}
+
+.searchInput {
+  height: 42px;
+  width: 100%;
+
+  padding: 0 16px 6px 16px;
+  outline: none;
+  border: none;
+
+  border-right: 0;
+  border-bottom: 0;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-size: 0.96em;
+
+  position: relative;
+}
+
+.searchInput::placeholder { color: #2B4162; }
+.suggestionLink { color: #2B4162; }
+.suggestionLink:hover { color: black; }

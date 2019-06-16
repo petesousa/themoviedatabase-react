@@ -1,0 +1,30 @@
+.loading {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading i {
+  font-size: 4em;
+}
+
+.loadingLight {
+  composes: loading;
+  background-color: #D9DCD6;
+}
+
+.loadingLight i {
+  color: #2B4162;
+}
+
+.loadingDark {
+  composes: loading;
+  background-color: black;
+}
+
+.loadingDark i {
+  color: white;
+}
